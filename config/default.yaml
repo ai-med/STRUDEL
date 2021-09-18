@@ -1,0 +1,33 @@
+DATA:
+  INPUT_CHALLENGE: /media/fabi/fabi/WMH_Challenge
+  INPUT_ADNI: /media/fabi/fabi/ADNI2/FLAIR/ADNI
+  VAL_UIDS_CHL: ./datasets/Challenge/val_uids.txt
+  TEST_UIDS_CHL: ./datasets/Challenge/test_uids.txt
+  TEST_UIDS_ADNI: ./datasets/ADNI2/test_uids.txt
+  FRACTION_ADNI: 0.01
+  VALID_UIDS: /media/fabi/fabi/ADNI2/FLAIR/ADNI2_FLAIR_T1.csv
+  BATCH_TRAIN: 4
+  BATCH_VAL: 4
+  AUGMENTATION: True
+  SLICE_CROP: 0
+  SAMPLE_SIZE: 192
+  THRESHOLD_INIT: 0.75
+  THRESHOLD_UP: 0.50
+
+TRAINING:
+  LEARNING_RATE: 0.0001
+  STAGES: 5
+  EPOCHS: 80
+  CHECKPOINT: ./checkpoints/
+
+EVALUATION:
+  CHECKPOINT: /media/fabi/fabi/checkpoints_STRUDEL/STRUDEL_stage=2.pth.tar
+  SAVE_DIR: output/
+  OUTPUT: ./output
+
+NETWORK:
+  IN_CHANNELS: 2
+  NUM_FILTERS: 64
+  KERNEL_SIZE: 3
+  DROP_OUT: 0.2
+  SE_BLOCK_TYPE: CSSE
