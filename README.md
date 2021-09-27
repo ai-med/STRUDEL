@@ -3,13 +3,21 @@ This repository contains the PyTorch implementation of the paper **STRUDEL: Self
 If you are using this code please cite:
 
 ```
-@article{groger2021strudel,
-  title={STRUDEL: Self-Training with Uncertainty Dependent Label Refinement across Domains},
-  author={Gr{\"o}ger, Fabian and Rickmann, Anne-Marie and Wachinger, Christian},
-  journal={arXiv preprint arXiv:2104.11596},
-  year={2021},
-  url={https://arxiv.org/abs/2104.11596}
-}
+@InProceedings{groger2021,
+author="Gr{\"o}ger, Fabian
+and Rickmann, Anne-Marie
+and Wachinger, Christian",
+editor="Lian, Chunfeng
+and Cao, Xiaohuan
+and Rekik, Islem
+and Xu, Xuanang
+and Yan, Pingkun",
+title="STRUDEL: Self-training with Uncertainty Dependent Label Refinement Across Domains",
+booktitle="Machine Learning in Medical Imaging",
+year="2021",
+publisher="Springer International Publishing",
+address="Cham",
+pages="306--316"}
 ```
 
 ```
